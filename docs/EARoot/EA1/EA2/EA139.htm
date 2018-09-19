@@ -38,11 +38,11 @@ function nameClassifier(name, separator)
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/04/2017 22:16:27</td>
+			<td width="85%" class="ObjectDetailsValue">02/04/2017 22:16:28</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">02/04/2017 22:14:45</td>
+			<td class="ObjectDetailsValue">02/04/2017 22:14:44</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{341A0966-3BF4-48d7-A579-84C99899BEE2}</td>
+			<td class="ObjectDetailsValue">{5B448906-FFF2-414c-9EA7-96DA426FB19B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA116.htm">2a, 2b, 2c</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT C.IDCOLECCION, T.TAXONID,&lt;br/&gt;&#160; T.IDGRUPOTAXONOMICO,&lt;br/&gt;&#160; L.CUTM10X10,&lt;br/&gt;&#160; L.FECHACUTM, L.IDCOLECCIONESMAGRAMA&lt;br/&gt;FROM TESP_TAXON T &lt;br/&gt;&#160; INNER JOIN TESP_TAXON_COLECCIONES&#160; C ON T.TaxonID = C.TAXONID&lt;br/&gt;&#160; INNER JOIN TESP_DWC_LOCATION&#160; L ON L.TaxonID = T.TaxonID&lt;br/&gt;WHERE&#160; C.IDCOLECCION = 15;&lt;br/&gt;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; C.IDCOLECCION,&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; T.TAXONID,&lt;br/&gt;&#160; T.IDGRUPOTAXONOMICO,&lt;br/&gt;&#160; P.MEASUREMENTTYPE,&lt;br/&gt;&#160; H.METHOD,&lt;br/&gt;&#160; M.MEASUREMENTVALUE,&lt;br/&gt;&#160; U.MEASUREMENTUNIT,&lt;br/&gt;&#160; M.APPLIESTO&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; TESP_DWCMEASUREMENTORFACT M&#160; &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON T.TAXONID = M.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES C ON C.TAXONID= T.TAXONID&lt;br/&gt;&#160; INNER JOIN TESP_T_MEASUREMENTTYPE P ON P.IDMEASUREMENTTYPE = M.IDMEASUREMENTTYPE&lt;br/&gt;&#160; LEFT JOIN TESP_T_MEASUREMENTMETHOD H ON H.IDMETHOD = M.IDMEASUREMENTMETHOD&lt;br/&gt;&#160; LEFT JOIN TESP_T_MEASUREMENTUNIT U ON U.IDMEASUREMENTUNIT = M.IDMEASUREMENTUNIT&lt;br/&gt;WHERE C.IDCOLECCION = 15;&lt;br/&gt;&lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  

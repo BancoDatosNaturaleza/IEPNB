@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ModelosAccess::</title>
+<title></title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27/03/2017 13:09:58</td>
+			<td width="85%" class="ObjectDetailsValue">27/03/2017 18:01:57</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">27/03/2017 13:09:58</td>
+			<td class="ObjectDetailsValue">27/03/2017 18:01:57</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">anieto4</td>
+			<td class="ObjectDetailsValue">cem</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{9C690C19-9804-45c9-AB85-A2E236E78EA8}</td>
+			<td class="ObjectDetailsValue">{8E0BF7AC-32B9-431c-81E6-6FB14F2DBB25}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1308.htm">3c-RGF_Access</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1304.htm">6a-CEEEI_Access</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">SELECT DISTINCT TESP_TAXON_COLECCIONES.IDCOLECCION, T.TAXONID, T.SCIENTIFICNAME, &lt;br/&gt;&#160; V.VERNACULARNAME,&lt;br/&gt;&#160; V.IDLANGUAGE,&lt;br/&gt;&#160; T.HIGHERCLASSIFICATION,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(T.TAXONREMARKS, 4000, 1) DESCR_DISTR_MUNDIAL, &lt;br/&gt;(SELECT K.SCIENTIFICNAME&#160; FROM TESP_TAXON K WHERE&#160;&#160; K.TAXONID = T.IDKINGDOM) AS REINO,&lt;br/&gt;(SELECT P.SCIENTIFICNAME&#160; FROM TESP_TAXON P WHERE&#160;&#160; P.TAXONID = T.IDPHYLUM) AS FILO,&lt;br/&gt;(SELECT O.SCIENTIFICNAME&#160; FROM TESP_TAXON O WHERE&#160;&#160; O.TAXONID = T.IDPHYLUM) AS ORDEN,&lt;br/&gt;(SELECT F.SCIENTIFICNAME&#160; FROM TESP_TAXON F WHERE&#160;&#160; F.TAXONID = T.IDFAMILY) AS FAMILIA,&lt;br/&gt;(SELECT G.SCIENTIFICNAME&#160; FROM TESP_TAXON G WHERE&#160;&#160; G.TAXONID = T.IDGENUS) AS GENERO,&lt;br/&gt;(SELECT S.SCIENTIFICNAME&#160; FROM TESP_TAXON S WHERE&#160;&#160; S.TAXONID = T.IDSUBGENUS) AS SUBGENRO,&lt;br/&gt;(SELECT I.SCIENTIFICNAME&#160; FROM TESP_TAXON I WHERE&#160;&#160; I.TAXONID = T.IDSUBGENUS) AS INFRASPECIFICEPITHET&lt;br/&gt;&lt;br/&gt;FROM TESP_TAXON T &lt;br/&gt;&#160; INNER JOIN TESP_TAXON_COLECCIONES ON T.TaxonID = TESP_TAXON_COLECCIONES.TAXONID&lt;br/&gt;&#160; LEFT JOIN TESP_TAXON_TIENE_VERNACULAR R ON T.TAXONID = R.TAXONID &lt;br/&gt;&#160; LEFT JOIN TESP_VERNACULARNAME V ON R.IDVERNACULARNAME = V.IDVERNACULARNAME&lt;br/&gt;WHERE&#160; TESP_TAXON_COLECCIONES.IDCOLECCION = 13 AND T.IDGENUS IS NOT NULL&#160; &lt;br/&gt;ORDER BY T.SCIENTIFICNAME;&lt;p/&gt;</div>
+
 <div class="pageFooter"></div>
  
 </body>

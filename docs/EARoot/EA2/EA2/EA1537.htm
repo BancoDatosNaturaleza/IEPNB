@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Boundary</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27/03/2017 18:01:57</td>
+			<td width="85%" class="ObjectDetailsValue">27/03/2017 14:04:59</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">27/03/2017 18:01:57</td>
+			<td class="ObjectDetailsValue">27/03/2017 14:04:59</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">cem</td>
+			<td class="ObjectDetailsValue">adiaz22</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,15 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{AEE935C4-3150-40e4-B62A-954664571CD9}</td>
+			<td class="ObjectDetailsValue">{31108AD9-C7BC-4d8a-BC8F-9351EDC2F63E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1330.htm">6a-CEEEI_Access</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1286.htm">4b-IECT_Access</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160; T.TAXONID,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.DISTRIBUTIONUNSTRUCT, 4000, 1) AS AREA_DIST_NATURAL,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.POPULATIONBIOLOGYUNSTRUCT, 4000, 1) AS DIST_ESPANIA,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(G.DISTRIBUTIONUNSTRUCT, 4000, 1) DESCR_DISTR_MUNDIAL&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; TESP_PLINIANCORE_EXTENSION P&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; LEFT JOIN TESP_GISIN_INVASIVENESS G ON G.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160; WHERE M.IDCOLECCION = 13&lt;br/&gt;ORDER BY&#160; T.TAXONID;&lt;br/&gt;&lt;p/&gt;</div>
-
+	
 <div class="pageFooter"></div>
  
 </body>

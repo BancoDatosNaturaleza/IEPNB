@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Text</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27/03/2017 12:25:45</td>
+			<td width="85%" class="ObjectDetailsValue">19/09/2018 13:11:16</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">27/03/2017 12:25:45</td>
+			<td class="ObjectDetailsValue">19/09/2018 13:11:16</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">adiaz22</td>
+			<td class="ObjectDetailsValue">amart103</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{D0B7DB2B-4BE6-4937-BC62-3CEF24F4EB62}</td>
+			<td class="ObjectDetailsValue">{EDB58C1C-E50B-4cc4-8242-FFD9279B9A46}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1302.htm">2c-LESPE_Access </a></td>
+			<td class="ObjectDetailsValue"><a href="EA1256.htm">1bcd_IEH_UnionComponentes</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;VISTA: V_LESPE_Evaluacion&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;SELECT DISTINCT&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;M.IDCOLECCION,&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;T.SCIENTIFICNAME,&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;C.MANAGEMENTPLAN,&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;G.MANAGEMENTYPE,&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;C.MANAGEMENTREMARKS, &lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;C.HUMANANDENVIRONMENTALRELEVANCE,&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;C.ACTIONS,&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;E.NOMBRE AS PROVINCIA, &lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;S.NOMBRE AS CCAA&lt;br/&gt;FROM &lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;TESP_MANAGEMENTANDCONSERVATION C&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;INNER JOIN TESP_PLINIANCORE_EXTENSION P ON&#160; C.TAXONRECORDID = P.TAXONRECORDID&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160; INNER JOIN TESP_LEGISLATION_TAXON L ON L.TAXONRECORDID = P.TAXONRECORDID&lt;br/&gt;&#160; INNER JOIN TESP_LEGIS_PROTECTLEGALSTATUS R ON R.IDPROTECTIONLEGALSTATUS = L.IDPROTECTIONLEGALSTATUS&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;LEFT JOIN TESP_MANAGTYPE_MEDCONSERVACION G ON C.IDMANAGEMENTANDCONSERTYPE = G.IDMANAGEANDCONSERVTYPE&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;LEFT JOIN T_NUTS3_ES E ON&#160; C.ID_NUT_3 = E.ID_NUT3&lt;br/&gt;&nbsp;&nbsp;&nbsp;&nbsp;LEFT JOIN T_NUTS2_ES_COMPETENCIAS S ON&#160; C.ID_NUT_2 = S.ID_NUT2&lt;br/&gt;WHERE M.IDCOLECCION = 12&lt;br/&gt; AND &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; (L.IDPROTECTIONLEGALSTATUS = 23 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 24 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 169 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 170 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 177 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 178 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 181 &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; OR&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; L.IDPROTECTIONLEGALSTATUS = 182 &lt;br/&gt;&#160;&#160;&#160; )&lt;br/&gt;ORDER BY T.SCIENTIFICNAME;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;1bcd-IEH_UnionComponentes&lt;/b&gt;&lt;/font&gt;&lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  

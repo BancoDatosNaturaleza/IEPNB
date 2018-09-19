@@ -38,7 +38,7 @@ function nameClassifier(name, separator)
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/04/2017 22:16:28</td>
+			<td width="85%" class="ObjectDetailsValue">02/04/2017 22:16:27</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{5D5CF64B-599C-4ae8-80F9-8566803A7C0F}</td>
+			<td class="ObjectDetailsValue">{368AC057-8D75-4411-99D5-3948B7E90152}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA116.htm">2a, 2b, 2c</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; M.IDCOLECCION,&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; T.TAXONID,&lt;br/&gt;&#160; S.YEAR,&lt;br/&gt;&#160; T.IDGRUPOTAXONOMICO,&lt;br/&gt;&#160; A.AUTHORITY,&lt;br/&gt;&#160; C.CATEGORY,&lt;br/&gt;&#160; H.APPLIESTO&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; TESP_THREATSTATUS S&#160; &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_PLINIANCORE_EXTENSION P ON&#160; P.TAXONRECORDID = S.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160; INNER JOIN TESP_T_THREATSTATUS_AUTHORITY A ON A.IDAUTHORITY = S.IDAUTHORITY&lt;br/&gt;&#160; INNER JOIN TESP_T_THREATCATEGORY C ON C.IDTHREADCATEGORY = S.IDTHREATCATEGORY&lt;br/&gt;&#160; INNER JOIN TESP_T_THREATSTATUS_APPLIESTO H ON H.IDAPPLIESTO= S.IDAPPLIESTO&lt;br/&gt;WHERE M.IDCOLECCION = 15;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">SELECT DISTINCT C.IDCOLECCION, T.TAXONID,&lt;br/&gt;&#160; T.REDNATURA_CODE,&lt;br/&gt;&#160; T.IDGRUPOTAXONOMICO&lt;br/&gt;FROM TESP_TAXON T &lt;br/&gt;&#160; INNER JOIN TESP_TAXON_COLECCIONES&#160; C ON T.TaxonID = C.TAXONID&lt;br/&gt;&#160; WHERE&#160; C.IDCOLECCION = 15 AND T.REDNATURA_CODE IS NOT NULL;&#160; &lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  

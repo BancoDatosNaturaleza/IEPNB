@@ -38,11 +38,11 @@ function nameClassifier(name, separator)
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/04/2017 20:49:54</td>
+			<td width="85%" class="ObjectDetailsValue">02/04/2017 20:49:55</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">02/04/2017 20:49:54</td>
+			<td class="ObjectDetailsValue">02/04/2017 20:49:55</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{8A106FC5-F343-41c7-9B78-F8540A584412}</td>
+			<td class="ObjectDetailsValue">{69269C10-79ED-4139-B1A7-C8E7D9F980C2}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA910.htm">6a, 6b, 6c, 6d, 6e, 6f</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160; T.TAXONID,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.DISTRIBUTIONUNSTRUCT, 4000, 1) AS AREA_DIST_NATURAL,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.POPULATIONBIOLOGYUNSTRUCT, 4000, 1) AS DIST_ESPANIA,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(G.DISTRIBUTIONUNSTRUCT, 4000, 1) DESCR_DISTR_MUNDIAL&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; TESP_PLINIANCORE_EXTENSION P&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; LEFT JOIN TESP_GISIN_INVASIVENESS G ON G.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160; WHERE M.IDCOLECCION = 13&lt;br/&gt;ORDER BY&#160; T.TAXONID;&lt;br/&gt;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160; T.TAXONID,&lt;br/&gt;&#160; R.REDALERTA&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; TESP_GISIN_INVASIVENESS_N G&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON T.TAXONID = G.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_INVASIVENESS_REDALERTA R ON&#160; R.IDINVASIVENESSN= G.IDINVASIVENESSN&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; LEFT JOIN TESP_GISIN_INVASIVENESS I ON I.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160; WHERE M.IDCOLECCION = 13&lt;br/&gt;ORDER BY T.TAXONID;&lt;br/&gt;&lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  

@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">05/04/2017 13:43:01</td>
+			<td class="ObjectDetailsValue">02/04/2017 20:49:54</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{5F960363-ECDF-4249-BD56-A91B7C46543F}</td>
+			<td class="ObjectDetailsValue">{FDF07FD5-FC22-46be-83EF-A2AB3A9DCE9B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA910.htm">6a, 6b, 6c, 6d, 6e, 6f</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT TESP_TAXON_COLECCIONES.IDCOLECCION, T.TAXONID, T.SCIENTIFICNAME, &lt;br/&gt;&#160; V.VERNACULARNAME,&lt;br/&gt;&#160; V.IDLANGUAGE,&lt;br/&gt;&#160; T.HIGHERCLASSIFICATION,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(T.TAXONREMARKS, 4000, 1) DESCR_DISTR_MUNDIAL, &lt;br/&gt;(SELECT K.SCIENTIFICNAME&#160; FROM TESP_TAXON K WHERE&#160;&#160; K.TAXONID = T.IDKINGDOM) AS REINO,&lt;br/&gt;(SELECT P.SCIENTIFICNAME&#160; FROM TESP_TAXON P WHERE&#160;&#160; P.TAXONID = T.IDPHYLUM) AS FILO,&lt;br/&gt;(SELECT O.SCIENTIFICNAME&#160; FROM TESP_TAXON O WHERE&#160;&#160; O.TAXONID = T.IDPHYLUM) AS ORDEN,&lt;br/&gt;(SELECT F.SCIENTIFICNAME&#160; FROM TESP_TAXON F WHERE&#160;&#160; F.TAXONID = T.IDFAMILY) AS FAMILIA,&lt;br/&gt;(SELECT G.SCIENTIFICNAME&#160; FROM TESP_TAXON G WHERE&#160;&#160; G.TAXONID = T.IDGENUS) AS GENERO,&lt;br/&gt;(SELECT S.SCIENTIFICNAME&#160; FROM TESP_TAXON S WHERE&#160;&#160; S.TAXONID = T.IDSUBGENUS) AS SUBGENRO,&lt;br/&gt;(SELECT I.SCIENTIFICNAME&#160; FROM TESP_TAXON I WHERE&#160;&#160; I.TAXONID = T.IDSUBGENUS) AS INFRASPECIFICEPITHET&lt;br/&gt;&lt;br/&gt;FROM TESP_TAXON T &lt;br/&gt;&#160; INNER JOIN TESP_TAXON_COLECCIONES ON T.TaxonID = TESP_TAXON_COLECCIONES.TAXONID&lt;br/&gt;&#160; LEFT JOIN TESP_TAXON_TIENE_VERNACULAR R ON T.TAXONID = R.TAXONID &lt;br/&gt;&#160; LEFT JOIN TESP_VERNACULARNAME V ON R.IDVERNACULARNAME = V.IDVERNACULARNAME&lt;br/&gt;WHERE&#160; TESP_TAXON_COLECCIONES.IDCOLECCION = 13 AND T.IDGENUS IS NOT NULL&#160; &lt;br/&gt;ORDER BY T.SCIENTIFICNAME;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160; T.TAXONID,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.INVASIVENESSUNSTRUCT, 4000, 1) AS IMPACTO_AMENAZA&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; TESP_PLINIANCORE_EXTENSION P&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160; WHERE M.IDCOLECCION = 13&lt;br/&gt;ORDER BY T.TAXONID;&lt;br/&gt;&lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  
