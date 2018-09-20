@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>1bcd-IEH_UnionComponentes::IEH_Salinidad</title>
+<title>1bcd-IEH_UnionComp::IEH_LPEH_Trazabilidad</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("IEH_Salinidad", " : "))</script>  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("IEH_LPEH_Trazabilidad", " : "))</script>  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">19/09/2018 13:00:28</td>
+			<td width="85%" class="ObjectDetailsValue">19/09/2018 13:00:16</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">19/09/2018 13:00:28</td>
+			<td class="ObjectDetailsValue">19/09/2018 13:00:16</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">cem</td>
+			<td class="ObjectDetailsValue">malvar35</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,20 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{FCC146A2-17B9-4b51-A818-4BFE0CFCAF48}</td>
+			<td class="ObjectDetailsValue">{9B9FEF46-805B-48de-9ED4-E81C2B769420}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3465.htm">1bcd_IEH_UnionComponentes</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Tabla que describe la salinidad de los hábitats.&lt;br/&gt;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">La información base para la elaboración de la LPEHT ha sido el sistema de clasificación del Paleártico. Esta clasificación mantiene la metodología, nomenclatura y tipo de codificación del CORINE, de la que se considera una extensión. En esta tabla quedan registradas las anotaciones realizadas durante el proceso de codificación.&lt;br/&gt;El campo CD_LPEHT_OLD normalmente hace referencia al código de la clasificación del Paleártico de la que deriva la nueva entrada.&lt;br/&gt;&lt;br/&gt;El campo CD_LPEHT_OLD normalmente hace referencia al código de la clasificación del Paleártico de la que deriva la nueva entrada.&lt;br/&gt;&lt;p/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -109,43 +109,159 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public NUMBER(5)</i><br /><strong>&nbsp;&nbsp;ID_IEH</strong>
+					<i>Public VARCHAR2(10)</i><br /><strong>&nbsp;&nbsp;CD_LPEHT_OLD</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30275')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30275" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30265')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30265" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes30275_00" style="display: none;">
+						<tr id="DetailsImageAttributes30265_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes30275_01" style="display: none;">
+						<tr id="DetailsImageAttributes30265_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes30275_02" style="display: none;">
+						<tr id="DetailsImageAttributes30265_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td>&lt;&lt;column&gt;&gt;</td>
 						</tr>
-						<tr id="DetailsImageAttributes30275_03" style="display: none;">
+						<tr id="DetailsImageAttributes30265_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
-							<td>Ordered <br /></td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes30275_04" style="display: none;">
+						<tr id="DetailsImageAttributes30265_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes30275_05" style="display: none;">
+						<tr id="DetailsImageAttributes30265_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes30275_06" style="display: none;">
+						<tr id="DetailsImageAttributes30265_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes30275_07" style="display: none;">
+							<tr id="DetailsImageAttributes30265_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Código antiguo de la Lista Patrón de Hábitats Terrestres#lt;p/#gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CLOB</i><br /><strong>&nbsp;&nbsp;CL_HISTORIAL</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30266')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30266" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes30266_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30266_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30266_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes30266_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30266_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30266_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes30266_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes30266_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Descripción trazabilidad código#lt;p/#gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public NUMBER(5)</i><br /><strong>&nbsp;&nbsp;ID_LPH</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30267')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30267" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes30267_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30267_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30267_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes30267_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td>Ordered <br /></td>
+						</tr>
+						<tr id="DetailsImageAttributes30267_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes30267_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes30267_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes30267_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -153,180 +269,6 @@ function nameClassifier(name, separator)
 					
 					
 						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public VARCHAR2(1)</i><br /><strong>&nbsp;&nbsp;BO_HIPERSALINO</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30276')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30276" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes30276_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30276_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30276_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;column&gt;&gt;</td>
-						</tr>
-						<tr id="DetailsImageAttributes30276_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30276_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30276_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes30276_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes30276_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Tipo hipersalino#lt;p/#gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public VARCHAR2(1)</i><br /><strong>&nbsp;&nbsp;BO_MARINO</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30277')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30277" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes30277_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30277_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30277_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;column&gt;&gt;</td>
-						</tr>
-						<tr id="DetailsImageAttributes30277_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30277_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30277_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes30277_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes30277_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Tipo marino#lt;p/#gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public VARCHAR2(1)</i><br /><strong>&nbsp;&nbsp;BO_SALOBRE</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes30278')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes30278" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes30278_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30278_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30278_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;column&gt;&gt;</td>
-						</tr>
-						<tr id="DetailsImageAttributes30278_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30278_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes30278_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes30278_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes30278_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Tipo salobre#lt;p/#gt;
-		</td>
-	</tr>
-</table></div>
-
 						
 				</td>
 			</tr>
@@ -340,21 +282,21 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>PK_IEH_SALINIDAD</strong>(					<a href="#" onclick="parent.toggleData('param{953A0685-C1AB-4623-8F75-C4D43F73C46C}')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="param{953A0685-C1AB-4623-8F75-C4D43F73C46C}" border="0" />ID_IEH: NUMBER</a>, 
+					<strong>PK_IEH_LPEH_Trazabi_01</strong>(					<a href="#" onclick="parent.toggleData('param{FD261BA5-6BFB-469f-9577-60812EAF78CB}')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="param{FD261BA5-6BFB-469f-9577-60812EAF78CB}" border="0" />ID_LPH: NUMBER</a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{953A0685-C1AB-4623-8F75-C4D43F73C46C}00" style="display: none;">
+						<tr id="param{FD261BA5-6BFB-469f-9577-60812EAF78CB}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{953A0685-C1AB-4623-8F75-C4D43F73C46C}01" style="display: none;">
+						<tr id="param{FD261BA5-6BFB-469f-9577-60812EAF78CB}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>in</td>
 						</tr>
-						<tr id="param{953A0685-C1AB-4623-8F75-C4D43F73C46C}02" style="display: none;">
+						<tr id="param{FD261BA5-6BFB-469f-9577-60812EAF78CB}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{953A0685-C1AB-4623-8F75-C4D43F73C46C}03" style="display: none;">
+						<tr id="param{FD261BA5-6BFB-469f-9577-60812EAF78CB}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
@@ -364,8 +306,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations30279" onclick="parent.toggleDiv('detailsDIVOperations30279','DetailsImageOperations30279')" />Details:
-						<div id="detailsDIVOperations30279" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations30268" onclick="parent.toggleDiv('detailsDIVOperations30268','DetailsImageOperations30268')" />Details:
+						<div id="detailsDIVOperations30268" class="DetailsDiv" >
 					<i>Sequential &lt;&lt;PK&gt;&gt; </i>
 					<table>
 						<tr>
@@ -382,7 +324,7 @@ function nameClassifier(name, separator)
 			</tr>
 
 		</table>
-</div>		<div class="ItemBody" id="AssociationsFromTable">
+</div>		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -391,22 +333,45 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3501.htm">«table» IEH_DescripcionHabitat</a><br />
+						<a href="EA3509.htm">«table» IEH_InvEspHabitat</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEH_Descripc_IEH_Salinid_01<br />
+						<strong>Name:</strong> FK_LP_IEH_01<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEH_SALINIDAD<br />
+						<strong>Name:</strong> PK_COMU_LP_LPHM<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink30280" onclick="parent.toggleDiv('detailsDIVLink30280','DetailsImageLink30280')" />Details:
-							<div id="detailsDIVLink30280" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink30269" onclick="parent.toggleDiv('detailsDIVLink30269','DetailsImageLink30269')" />Details:
+							<div id="detailsDIVLink30269" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA2/EA1/EA2235.htm">«table» IEH_InvEspHabitat</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_LP_IEH_01<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_COMU_LP_LPHM<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink30270" onclick="parent.toggleDiv('detailsDIVLink30270','DetailsImageLink30270')" />Details:
+							<div id="detailsDIVLink30270" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

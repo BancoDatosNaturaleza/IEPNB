@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{7AA032AD-009A-4d5d-92B5-5FD9F2071B08}</td>
+			<td class="ObjectDetailsValue">{CD2C5204-07B0-459a-95C3-8124861870B2}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1304.htm">6a-CEEEI_Access</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1306.htm">6a-CEEEI_Access</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160; T.TAXONID,&lt;br/&gt;&#160; R.REDALERTA&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; TESP_GISIN_INVASIVENESS_N G&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON T.TAXONID = G.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_INVASIVENESS_REDALERTA R ON&#160; R.IDINVASIVENESSN= G.IDINVASIVENESSN&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; LEFT JOIN TESP_GISIN_INVASIVENESS I ON I.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160; WHERE M.IDCOLECCION = 13&lt;br/&gt;ORDER BY T.TAXONID;&lt;br/&gt;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160; T.TAXONID,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.FULLDESCRIPTIONUNSTRUCT, 4000, 1) AS BIOLOGIA_HABITAT,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(P.HABITATUNSTRUCT, 4000, 1) AS HABITAT_AREA&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160; TESP_PLINIANCORE_EXTENSION P&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160; LEFT JOIN TESP_GISIN_INVASIVENESS G ON G.TAXONID= T.TAXONID&lt;br/&gt;&#160;&#160;&#160; WHERE M.IDCOLECCION = 13&lt;br/&gt;ORDER BY T.TAXONID;&lt;br/&gt;&lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  

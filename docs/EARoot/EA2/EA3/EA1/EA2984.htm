@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>1a-IEZH::IEZH_InvEspZonasHumedas</title>
+<title>1a-IEZH::LC_IEZH_EstadoConservacion</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("IEZH_InvEspZonasHumedas", " : "))</script>  : Public  &lt;&lt;table&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LC_IEZH_EstadoConservacion", " : "))</script>  : Public  &lt;&lt;table&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,11 +87,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B4006ADA-0CB8-42a8-B92D-68AE61B5CCBE}</td>
+			<td class="ObjectDetailsValue">{C9EB9D90-F512-46e2-BBC1-3FCF0969CDAB}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2933.htm">1a-IEZH</a></td>
+			<td class="ObjectDetailsValue"><a href="EA2935.htm">1a-IEZH</a></td>
 		</tr>
 	</table>
 	
@@ -100,6 +100,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -108,43 +109,43 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public VARCHAR2(8)</i><br /><strong>&nbsp;&nbsp;ID_IEZH</strong>
+					<i>Public NUMBER(1)</i><br /><strong>&nbsp;&nbsp;CD_EST_CONSERV</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes27761')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes27761" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes27748')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes27748" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes27761_00" style="display: none;">
+						<tr id="DetailsImageAttributes27748_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27761_01" style="display: none;">
+						<tr id="DetailsImageAttributes27748_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27761_02" style="display: none;">
+						<tr id="DetailsImageAttributes27748_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
 						</tr>
-						<tr id="DetailsImageAttributes27761_03" style="display: none;">
+						<tr id="DetailsImageAttributes27748_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td>Ordered <br /></td>
 						</tr>
-						<tr id="DetailsImageAttributes27761_04" style="display: none;">
+						<tr id="DetailsImageAttributes27748_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27761_05" style="display: none;">
+						<tr id="DetailsImageAttributes27748_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes27761_06" style="display: none;">
+						<tr id="DetailsImageAttributes27748_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes27761_07" style="display: none;">
+							<tr id="DetailsImageAttributes27748_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -156,50 +157,60 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public VARCHAR2(100)</i><br /><strong>&nbsp;&nbsp;NB_HUMEDAL</strong>
+					<i>Public VARCHAR2(50)</i><br /><strong>&nbsp;&nbsp;DS_EST_CONSERV</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes27762')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes27762" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes27749')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes27749" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes27762_00" style="display: none;">
+						<tr id="DetailsImageAttributes27749_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27762_01" style="display: none;">
+						<tr id="DetailsImageAttributes27749_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27762_02" style="display: none;">
+						<tr id="DetailsImageAttributes27749_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;column&gt;&gt;</td>
 						</tr>
-						<tr id="DetailsImageAttributes27762_03" style="display: none;">
+						<tr id="DetailsImageAttributes27749_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27762_04" style="display: none;">
+						<tr id="DetailsImageAttributes27749_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes27762_05" style="display: none;">
+						<tr id="DetailsImageAttributes27749_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes27762_06" style="display: none;">
+						<tr id="DetailsImageAttributes27749_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes27762_07" style="display: none;">
+							<tr id="DetailsImageAttributes27749_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			1 - Bien conservada&lt;br/&gt;2 - Conservada&lt;br/&gt;3 - Alterada&lt;br/&gt;4 - Muy alterada&lt;br/&gt;5 - Desaparecida#lt;p/#gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
@@ -213,21 +224,21 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>PK_IEZH_INVESPZONASHUMEDAS</strong>(					<a href="#" onclick="parent.toggleData('param{3D2B9366-AF02-4dc0-9FC9-C6E2E423931C}')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="param{3D2B9366-AF02-4dc0-9FC9-C6E2E423931C}" border="0" />ID_IEZH: VARCHAR2</a>, 
+					<strong>PK_LC_IEZH_EstadoConservacion</strong>(					<a href="#" onclick="parent.toggleData('param{AA09A839-010C-4f41-AD73-4EA63108970C}')" style="text-decoration: none; color: #000000;"><img src="../../../../images/plus03.gif" align="absmiddle" id="param{AA09A839-010C-4f41-AD73-4EA63108970C}" border="0" />CD_EST_CONSERV: NUMBER</a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{3D2B9366-AF02-4dc0-9FC9-C6E2E423931C}00" style="display: none;">
+						<tr id="param{AA09A839-010C-4f41-AD73-4EA63108970C}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{3D2B9366-AF02-4dc0-9FC9-C6E2E423931C}01" style="display: none;">
+						<tr id="param{AA09A839-010C-4f41-AD73-4EA63108970C}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>in</td>
 						</tr>
-						<tr id="param{3D2B9366-AF02-4dc0-9FC9-C6E2E423931C}02" style="display: none;">
+						<tr id="param{AA09A839-010C-4f41-AD73-4EA63108970C}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{3D2B9366-AF02-4dc0-9FC9-C6E2E423931C}03" style="display: none;">
+						<tr id="param{AA09A839-010C-4f41-AD73-4EA63108970C}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
@@ -237,8 +248,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations27763" onclick="parent.toggleDiv('detailsDIVOperations27763','DetailsImageOperations27763')" />Details:
-						<div id="detailsDIVOperations27763" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations27750" onclick="parent.toggleDiv('detailsDIVOperations27750','DetailsImageOperations27750')" />Details:
+						<div id="detailsDIVOperations27750" class="DetailsDiv" >
 					<i>Sequential &lt;&lt;PK&gt;&gt; </i>
 					<table>
 						<tr>
@@ -264,275 +275,22 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2950.htm">«table» AUX_IEZH_ZonCue</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_AUX_IEZH_Inv_IEZH_InvEsp_03<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27764" onclick="parent.toggleDiv('detailsDIVLink27764','DetailsImageLink27764')" />Details:
-							<div id="detailsDIVLink27764" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2951.htm">«table» AUX_IEZH_ZonDem</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_AUX_IEZH_Inv_IEZH_InvEsp_04<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27765" onclick="parent.toggleDiv('detailsDIVLink27765','DetailsImageLink27765')" />Details:
-							<div id="detailsDIVLink27765" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2962.htm">«table» AUX_IEZH_ZonMun</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_InvEspZonasHumedas<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27766" onclick="parent.toggleDiv('detailsDIVLink27766','DetailsImageLink27766')" />Details:
-							<div id="detailsDIVLink27766" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2978.htm">«table» IEZH_Modif</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_InvEspZonasHumedas<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27767" onclick="parent.toggleDiv('detailsDIVLink27767','DetailsImageLink27767')" />Details:
-							<div id="detailsDIVLink27767" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2952.htm">«table» AUX_IEZH_ZonRes</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_AUX_IEZH_Inv_IEZH_InvEsp_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27768" onclick="parent.toggleDiv('detailsDIVLink27768','DetailsImageLink27768')" />Details:
-							<div id="detailsDIVLink27768" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2971.htm">«table» IEZH_ActSup</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_ActSup_IEZH_InvEspZ_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27769" onclick="parent.toggleDiv('detailsDIVLink27769','DetailsImageLink27769')" />Details:
-							<div id="detailsDIVLink27769" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2980.htm">«table» IEZH_PlanProt</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_PlanPro_IEZH_InvEsp_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27770" onclick="parent.toggleDiv('detailsDIVLink27770','DetailsImageLink27770')" />Details:
-							<div id="detailsDIVLink27770" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2961.htm">«featureType» 1a_IEZH_P_POLY</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> IEZH_CODE<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27771" onclick="parent.toggleDiv('detailsDIVLink27771','DetailsImageLink27771')" />Details:
-							<div id="detailsDIVLink27771" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2960.htm">«table» AUX_IEZH_ZonSub</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_AUX_IEZH_Inv_IEZH_InvEsp_02<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27772" onclick="parent.toggleDiv('detailsDIVLink27772','DetailsImageLink27772')" />Details:
-							<div id="detailsDIVLink27772" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2970.htm">«table» IEZH_Act</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_Act_IEZH_InvEspZona_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27773" onclick="parent.toggleDiv('detailsDIVLink27773','DetailsImageLink27773')" />Details:
-							<div id="detailsDIVLink27773" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2977.htm">«table» IEZH_Localizacion</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_Localiz_IEZH_InvEsp_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27774" onclick="parent.toggleDiv('detailsDIVLink27774','DetailsImageLink27774')" />Details:
-							<div id="detailsDIVLink27774" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2973.htm">«table» IEZH_EstadoConservacion</a><br />
+						<a href="EA2975.htm">«table» IEZH_EstadoConservacion</a><br />
 						Class «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_InvEspZonasHumedas<br />
+						<strong>Name:</strong> FK_IEZH_EstadoC_LC_IEZH_Est_01<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
+						<strong>Name:</strong> PK_LC_IEZH_EstadoConservacion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27775" onclick="parent.toggleDiv('detailsDIVLink27775','DetailsImageLink27775')" />Details:
-							<div id="detailsDIVLink27775" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27751" onclick="parent.toggleDiv('detailsDIVLink27751','DetailsImageLink27751')" />Details:
+							<div id="detailsDIVLink27751" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -540,137 +298,22 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2975.htm">«table» AUX_IEZH_ZonEsp</a><br />
-						Table «FK» 
+						<a href="EA2975.htm">«table» IEZH_EstadoConservacion</a><br />
+						Class «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_InvEspZonasHumedas<br />
+						<strong>Name:</strong> FK_LC_IEZH_EstadoConservacion<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
+						<strong>Name:</strong> PK_LC_IEZH_EstadoConservacion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27776" onclick="parent.toggleDiv('detailsDIVLink27776','DetailsImageLink27776')" />Details:
-							<div id="detailsDIVLink27776" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2976.htm">«table» IEZH_Inclusion</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_Inclusi_IEZH_InvEsp_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27777" onclick="parent.toggleDiv('detailsDIVLink27777','DetailsImageLink27777')" />Details:
-							<div id="detailsDIVLink27777" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2981.htm">«table» IEZH_SubZona</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_InvEspZonasHumedas<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27778" onclick="parent.toggleDiv('detailsDIVLink27778','DetailsImageLink27778')" />Details:
-							<div id="detailsDIVLink27778" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2963.htm">«table» AUX_IEZH_ZonTip</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_InvEspZonasHumedas<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27779" onclick="parent.toggleDiv('detailsDIVLink27779','DetailsImageLink27779')" />Details:
-							<div id="detailsDIVLink27779" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2955.htm">«table» IEZH_DMA</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_DMA_IEZH_InvEspZona_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27780" onclick="parent.toggleDiv('detailsDIVLink27780','DetailsImageLink27780')" />Details:
-							<div id="detailsDIVLink27780" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2972.htm">«table» IEZH_Delimitacion</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_IEZH_Delimit_IEZH_InvEsp_01<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_IEZH_INVESPZONASHUMEDAS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27781" onclick="parent.toggleDiv('detailsDIVLink27781','DetailsImageLink27781')" />Details:
-							<div id="detailsDIVLink27781" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink27752" onclick="parent.toggleDiv('detailsDIVLink27752','DetailsImageLink27752')" />Details:
+							<div id="detailsDIVLink27752" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -679,7 +322,28 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-	</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">asDictionary</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario27753" onclick="parent.toggleDiv('detailsDIVScenario27753','DetailsImageScenario27753')" />Details:
+						<div id="detailsDIVScenario27753" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: If &#39;false&#39;, the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>

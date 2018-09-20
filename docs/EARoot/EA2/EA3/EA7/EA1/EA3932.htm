@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>1f-MFE_ER_Teórico::Cobertura</title>
+<title>1f-MFE_ER_Teórico::ARTIFICIAL</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,11 +34,11 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Cobertura", " : "))</script>  : Public  &lt;&lt;ERD_Attribute&gt;&gt; ERD_Attribute</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ARTIFICIAL", " : "))</script>  : Public  &lt;&lt;ERD_Entity&gt;&gt; ERD_Entity</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16/11/2016 8:42:19</td>
+			<td width="85%" class="ObjectDetailsValue">16/11/2016 8:38:10</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -87,19 +87,53 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{BE258374-C3A8-4e6d-B3B7-8B27232AA89E}</td>
+			<td class="ObjectDetailsValue">{4F6E2480-5B22-4838-8B9B-92D98605CE80}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3918.htm">1f-MFE_ER_Teórico</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3920.htm">1f-MFE_ER_Teórico</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3937.htm">«ERD_Attribute» Cobertura</a><br />
+						ERD_Attribute «ERD_Connector» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink32164" onclick="parent.toggleDiv('detailsDIVLink32164','DetailsImageLink32164')" />Details:
+							<div id="detailsDIVLink32164" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -109,7 +143,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3954.htm">«ERD_Entity» SUPERFICIE CON ESCASA O NULA VEGETACIÓN</a><br />
+						<a href="EA3952.htm">«ERD_Entity» NO FORESTAL</a><br />
 						ERD_Entity «ERD_Connector» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -123,8 +157,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink32170" onclick="parent.toggleDiv('detailsDIVLink32170','DetailsImageLink32170')" />Details:
-							<div id="detailsDIVLink32170" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink32165" onclick="parent.toggleDiv('detailsDIVLink32165','DetailsImageLink32165')" />Details:
+							<div id="detailsDIVLink32165" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -140,27 +174,14 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">attributeType</td>
-				<td width="50%" class="TableRow" valign="top">normal</td>
+				<td width="50%" class="TableRow" valign="top">isWeakEntity</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario32171" onclick="parent.toggleDiv('detailsDIVScenario32171','DetailsImageScenario32171')" />Details:
-						<div id="detailsDIVScenario32171" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: normal,primaryKey,multi-valued,derived<br />Default: normal<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">commonDataType</td>
-				<td width="50%" class="TableRow" valign="top">na</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario32172" onclick="parent.toggleDiv('detailsDIVScenario32172','DetailsImageScenario32172')" />Details:
-						<div id="detailsDIVScenario32172" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: bigint,binary,blob,boolean,char,currency,date,datetime,decimal,double,float,guid,integer,long,money,nchar,ntext,number,numeric,nvarchar,real,smallint,sqlvariant,text,time,timestamp,tinyint,varbinary,varchar,na<br />Default: na<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario32166" onclick="parent.toggleDiv('detailsDIVScenario32166','DetailsImageScenario32166')" />Details:
+						<div id="detailsDIVScenario32166" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br /></div>
 
 						</div>
 					</div>

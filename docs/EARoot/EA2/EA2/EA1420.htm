@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B68ECBCD-2292-4db0-83C7-4C45B2459E39}</td>
+			<td class="ObjectDetailsValue">{1FBD5AC5-D916-4c0e-B44D-B1002B60ED50}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1274.htm">2b-IEEM_Access</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1276.htm">2b-IEEM_Access</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; M.IDCOLECCION,&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; T.TAXONID,&lt;br/&gt;&#160; T.IDGRUPOTAXONOMICO, &lt;br/&gt;&#160; L.LEGISLATIONNAME,&lt;br/&gt;&#160; R.PROTECTIONLEGALSTATUS,&lt;br/&gt;&#160; L.REMARKS&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; TESP_LEGISLATION_TAXON&#160; L&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_PLINIANCORE_EXTENSION P ON&#160; P.TAXONRECORDID = L.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160; INNER JOIN TESP_LEGIS_PROTECTLEGALSTATUS R ON R.IDPROTECTIONLEGALSTATUS = L.IDPROTECTIONLEGALSTATUS&lt;br/&gt;WHERE M.IDCOLECCION = 15;&lt;br/&gt;&lt;p/&gt;</div>
+	<div class="ObjectDetailsNotes">SELECT DISTINCT&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; M.IDCOLECCION,&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; T.TAXONID,&lt;br/&gt;&#160; T.IDGRUPOTAXONOMICO,&lt;br/&gt;&#160; I.ENDEMICIN,&lt;br/&gt;&#160; SYS.DBMS_LOB.SUBSTR(E.ADDITIONALINFORMATION, 4000, 1) OBSERVACIONES&lt;br/&gt;FROM &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; TESP_ENDEMIC E&#160; &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_PLINIANCORE_EXTENSION P ON&#160; P.TAXONRECORDID = E.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON T ON P.TAXONRECORDID = T.TAXONRECORDID&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; INNER JOIN TESP_TAXON_COLECCIONES M ON M.TAXONID= T.TAXONID&lt;br/&gt;&#160; INNER JOIN TESP_T_ENDEMICIN I ON I.IDENDEMICIN= E.IDENDEMICIN&lt;br/&gt;WHERE M.IDCOLECCION = 15 AND I.ENDEMICIN IS NOT NULL;&lt;br/&gt;&lt;p/&gt;</div>
 
 <div class="pageFooter"></div>
  
